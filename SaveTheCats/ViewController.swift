@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var background: UIImageView!
+    @IBOutlet weak var lorena: UIImageView!
+    @IBOutlet weak var buttoni: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func btnPressed(_ sender: Any) {
+        background.isHidden = false
+        lorena.isHidden = false
+        buttoni.isHidden = true
+        
+    }
 
 }
 
